@@ -22,8 +22,35 @@ let empObj = [
   {
     empId:4,
     empName: "Pramod",
-    emp:126
+    empCode:126
+  },
+  {
+    empId:5,
+    empName: "Prem",
+    empCode:127
+  },
+  {
+    empId:6,
+    empName: "Pragya",
+    empCode:128
+  },
+  {
+    empId:7,
+    empName: "Samar",
+    empCode:129
+  },
+  {
+    empId:8,
+    empName: "Piyush",
+    empCode:130
+  },
+  {
+    empId:9,
+    empName: "Prakash",
+    empCode:131
   }
+  
+
 ];
 
 //here, i am getting the length of array object.
