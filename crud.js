@@ -3,7 +3,28 @@ let selectedRow = null;
 let empTable = document.getElementById("eTable");
 
 //I have created the array object here.
-let empObj = [];
+let empObj = [
+  {
+    empId:1,
+    empName: "sahil",
+    empCode:124
+  },
+  {
+    empId:2,
+    empName: "sameer",
+    empCode:123
+  },
+  {
+    empId:3,
+    empName: "deep",
+    empCode:125
+  },
+  {
+    empId:4,
+    empName: "Pramod",
+    emp:126
+  }
+];
 
 //here, i am getting the length of array object.
 let objLength = empObj.length;
@@ -15,16 +36,16 @@ for (let i = 0; i < objLength; i++) {
   myData +=
     "<tr>" +
     "<td>" +
-    empObj[i].id +
+    empObj[i].empId +
     "</td>" +
     "<td>" +
-    empObj[i].Name +
+    empObj[i].empName +
     "</td>" +
     "<td>" +
-    empObj[i].EmpCode +
+    empObj[i].empCode +
     "</td>" +
-    '<td><a class="anchor" onClick="edit()">Edit</a></td>' +
-    '<td><a class="anchor" onClick="delete()">Delete</a></td>' +
+    '<td><a class="anchor" onClick="edit(this)">Edit</a></td>' +
+    '<td><a class="anchor" onClick="onDelete(this)">Delete</a></td>' +
     "</tr>";
 }
 empTable.innerHTML = myData;
