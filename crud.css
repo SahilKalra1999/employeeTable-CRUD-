@@ -1,0 +1,13 @@
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+.anchor {
+  color: blue;
+}
+input {
+  width: 250px;
+  border-radius: 40px;
+}
